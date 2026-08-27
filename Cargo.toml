@@ -1,0 +1,21 @@
+[package]
+name = "codex-archive-subagent-threads"
+version = "0.1.0"
+edition = "2024"
+description = "Archive completed Codex subagent threads from the command line"
+license = "MIT"
+repository = "https://github.com/azakharau/codex-archive-subagent-threads"
+homepage = "https://github.com/azakharau/codex-archive-subagent-threads"
+readme = "README.md"
+keywords = ["codex", "cli", "sqlite", "automation"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.49", features = ["derive"] }
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+
+[dev-dependencies]
+tempfile = "3.23.0"

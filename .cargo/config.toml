@@ -1,0 +1,7 @@
+[profile.dev]
+debug = 1
+incremental = true
+codegen-units = 256
+
+[profile.dev.package."*"]
+debug = 0
